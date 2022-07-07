@@ -32,12 +32,12 @@ let src_folder = "#src";
 
 let path = {
 	build: {
-		html: project_name + "/",
-		js: project_name + "/js/",
-		css: project_name + "/css/",
-		images: project_name + "/img/",
-		fonts: project_name + "/fonts/",
-		videos: project_name + "/videos/"
+		html: "docs" + "/",
+		js: "docs" + "/js/",
+		css: "docs" + "/css/",
+		images: "docs" + "/img/",
+		fonts: "docs" + "/fonts/",
+		videos: "docs" + "/videos/"
 	},
 	src: {
 		favicon: src_folder + "/img/favicon.{jpg,png,svg,gif,ico,webp}",
@@ -54,13 +54,13 @@ let path = {
 		css: src_folder + "/scss/**/*.scss",
 		images: src_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"
 	},
-	clean: "./" + project_name + "/"
+	clean: "./" + "docs" + "/"
 };
 
 function browserSync(done) {
 	browsersync.init({
 		server: {
-			baseDir: "./" + project_name + "/"
+			baseDir: "./" + "docs" + "/"
 		},
 		notify: false,
 		port: 3000,
