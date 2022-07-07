@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="page-wrap">
+		@@include('_header.html',{})
+		@@include('_main.html',{})
+		@@include('_footer.html',{})
+
+		<div class="mobile-menu-block">
+			<ul class="nav-list-mobile">
+				<li class="nav-list__item-mobile">
+					<a class="nav-list__item-link" href="#Header"> Home </a>
+				</li>
+				<li class="nav-list__item-mobile">
+					<a class="nav-list__item-link" href="#Members"> Members </a>
+				</li>
+				<li class="nav-list__item-mobile">
+					<a class="nav-list__item-link" href="#HowItWorks"> How It Works </a>
+				</li>
+				<li class="nav-list__item-mobile">
+					<a class="nav-list__item-link" href="#Help"> Help </a>
+				</li>
+				<li class="nav-list__item-mobile">
+					<a class="nav-list__item-link sign-in" href="#"> Sign In </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- @@include('_popup.html',{}) -->
+	@@include('_js.html',{})
+</body>
+
+</html>

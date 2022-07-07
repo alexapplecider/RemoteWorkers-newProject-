@@ -1,0 +1,780 @@
+.about {
+	padding-top: 31px;
+	padding-left: 29.12%;
+	min-height: 560px;
+	background: url(../img/about_girl.webp) no-repeat;
+	background-position: 0 0;
+	color: #455a64;
+
+	&__title {
+		flex-basis: 100%;
+		font: 2.5em/1.3 "MuseoSansBold";
+		margin-bottom: 11px;
+	}
+
+	&__title--small {
+		font: 1.67em/1.3 "MuseoSansBold";
+		color: #78909c;
+		margin-bottom: 29px;
+		letter-spacing: 0.3px;
+	}
+
+	&__skills-title {
+		font: 2.5em/1.3 "MuseoSansBold";
+		margin-bottom: 13px;
+		color: $second-color;
+		letter-spacing: 1px;
+	}
+
+	&__text {
+		font: 1.45em/1.6 "MuseoSansLight";
+		color: #78909c;
+		letter-spacing: 0.5px;
+		margin-bottom: 38px;
+	}
+
+	&__skills-list {
+		margin-bottom: 45px;
+	}
+}
+
+.skills-list__item {
+	position: relative;
+	display: inline-block;
+	font: 1.458em/1.6 "MuseoSansLight";
+	color: #78909c;
+	letter-spacing: .4px;
+	font-stretch: extra-expanded;
+	list-style: none;
+	padding-left: 10px;
+	margin-left: 17px;
+
+	&:first-child {
+		margin-left: 0px;
+	}
+
+	&:nth-child(9) {
+		margin-left: 0px;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		background-color: #79909c;
+		border-radius: 50%;
+		top: 8px;
+		left: 0;
+	}
+}
+
+.price-per-hour {
+	display: inline-block;
+	font: 2.5em/1.3 "MuseoSansMedium";
+	color: $second-color;
+	margin-right: 28px;
+}
+
+.about-switch-button {
+	display: inline-block;
+}
+>
+.my-profile,
+.hire-me {
+	display: inline-block;
+	font: 1.544em/1.3 "MuseoSansLight";
+	letter-spacing: 1px;
+	border: 2px solid $accent-color;
+	border-radius: 3px;
+	padding: 9px 21px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.my-profile {
+	color: $accent-color;
+	margin-right: 10px;
+
+	&:hover {
+		color: #fff;
+		background-color: $accent-color;
+		transition: 0.5s;
+		border-top-right-radius: 0px;
+	}
+}
+
+.hire-me {
+	// margin-left: -5px;
+	color: #fff;
+	background-color: $accent-color;
+	border-top-left-radius: 0px;
+
+	&:hover {
+		color: $accent-color;
+		background-color: #fff;
+	}
+}
+
+.how-work {
+	display: flex;
+	justify-content: center;
+	min-height: 450px;
+	margin-bottom: 92px;
+
+	&-inner-wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		// width: 50%;
+		background-color: $accent-color;
+	}
+
+	&__find-out-link {
+		display: block;
+		position: relative;
+		font: 2em/1.3 "MuseoSansRegular";
+		color: #fff;
+		letter-spacing: 1px;
+		background-color: #1abc9c;
+		padding-top: 30px;
+		padding-left: 26%;
+		padding-bottom: 25px;
+		text-decoration: none;
+	}
+
+	&__find-out-link>img {
+		vertical-align: middle;
+		margin-bottom: 2px;
+	}
+}
+
+.how-work__description {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+	height: auto;
+	max-width: 500px;
+	padding-right: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	&-title {
+		font: 2.5em/1.3 "MuseoSansBold";
+		color: #fff;
+		letter-spacing: 0.6px;
+		margin-top: 101px;
+		margin-bottom: 18px;
+	}
+
+	&-text {
+		font: 1.45em/1.7 "MuseoSansLight";
+		letter-spacing: 0.56px;
+		color: #fff;
+		margin-bottom: 70px;
+	}
+}
+
+.video-wrap {
+	width: 50%;
+	max-height: 450px;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: 50%;
+		left: -10px;
+		background-color: #30c6a5;
+		transform: rotate(45deg);
+	}
+}
+
+.featured-profiles {
+	color: black;
+	flex-basis: 100%;
+	max-width: 730px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
+.bottom-line {
+	border-bottom: 1px solid #e1e3e4;
+}
+
+.flex-wrap--featured-profiles {
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.featured-profiles__heading {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.profiles-heading {
+	&--small-title {
+		width: 100%;
+		margin-bottom: 3px;
+		font: 1.45em/1.7 "MuseoSansRegular";
+		color: #546e7a;
+	}
+
+	&--title {
+		font: 2.5em/1.3 "MuseoSansBold";
+		letter-spacing: 0.5px;
+		color: $second-color;
+	}
+
+	&--counter {
+		font: 1.45em/1.7 "MuseoSansRegular";
+		color: #546e7a;
+	}
+}
+
+.featured-profiles-table {
+	font: 1.35em/1.7 "MuseoSansRegular";
+	color: #78909c;
+	width: 100%;
+}
+
+.profile-row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	border: 1px solid #e0e7ee;
+	border-top: none;
+	padding-right: 30px;
+	padding-left: 30px;
+
+	&:first-child {
+		border-top: 1px solid #e0e7ee;
+	}
+
+	&__cell {
+		display: inline-block;
+		padding-top: 27px;
+		padding-bottom: 20px;
+		align-self: center;
+		letter-spacing: 0.5px;
+	}
+}
+
+.view-profile-link {
+	display: inline-block;
+	text-decoration: none;
+	color: $accent-color;
+	border: 1px solid $accent-color;
+	border-radius: 2px;
+	padding: 2px 12px;
+
+	&:hover {
+		color: #fff;
+		background-color: $accent-color;
+	}
+}
+
+.cell-name {
+	position: relative;
+	width: 215px;
+}
+
+.photo {
+	float: left;
+	margin-right: 17px;
+}
+
+.name {
+	display: block;
+	font: 18px/1.3 "MuseoSansBold";
+	color: #455a64;
+	letter-spacing: 1px;
+	margin-bottom: 3px;
+}
+
+.position {
+	display: block;
+}
+
+.top-teams {
+	width: 230px;
+	font: 1.45em/1.7 "MuseoSansLight";
+
+	&__small-title {
+		margin-bottom: 5px;
+		color: #546e7a;
+	}
+
+	&__title {
+		font: 25px/1.3 "MuseoSansBold";
+		color: $second-color;
+		letter-spacing: 1px;
+		margin-bottom: 30px;
+	}
+}
+
+.top-teams__first-team,
+.top-teams__second-team {
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.first-team__poster,
+.second-team__poster {
+	position: relative;
+	width: 230px;
+	height: 223px;
+	overflow: hidden;
+	border-radius: 3px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+
+	&::after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(69, 90, 100, 0.5);
+	}
+}
+
+.first-team__name,
+.second-team__name {
+	position: absolute;
+	padding-top: 50px;
+	top: 27%;
+	left: 25%;
+	font: 18px/1.7 "MuseoSansRegular";
+	color: white;
+	text-decoration: none;
+
+	&::after {
+		content: "";
+		width: 48px;
+		height: 38px;
+		position: absolute;
+		top: 0;
+		left: 23%;
+		background: url(../img/icon-sprite.webp) -28px -4px no-repeat;
+	}
+}
+
+.second-team__name {
+	position: absolute;
+	padding-top: 50px;
+	top: 27%;
+	left: 33%;
+	font: 18px/1.7 "MuseoSansRegular";
+	color: white;
+	text-decoration: none;
+}
+
+.second-team__name::after {
+	content: "";
+	width: 48px;
+	height: 57px;
+	position: absolute;
+	top: -10px;
+	left: 19%;
+	background: url(../img/icon-sprite.webp) -82px -3px no-repeat;
+}
+
+.first-team__image,
+.second-team__image {
+	position: absolute;
+	top: -45%;
+	left: -67%;
+	transform: scale(1);
+}
+
+.second-team__image {
+	position: absolute;
+	top: -33%;
+	left: -47%;
+	transform: scale(1);
+}
+
+.first-team__caption,
+.second-team__caption {
+	padding: 15px 30px;
+	border: 1px solid;
+	border-top: none;
+	border-color: #e0e7ee;
+
+	& p {
+		font: 13px/1.7 "MuseoSansMedium";
+		color: #78909c;
+	}
+}
+
+.full-time,
+.part-time {
+	margin-right: 10px;
+}
+
+.flex-wrap--why-us {
+	position: relative;
+}
+
+
+.back-block {
+	position: absolute;
+	top: 18%;
+	right: -55%;
+	width: 100%;
+	height: 535px;
+	background: url(../img/why-us.webp) no-repeat;
+	z-index: 1;
+}
+
+.why-us {
+	position: relative;
+	width: 515px;
+	padding-top: 100px;
+	padding-bottom: 55px;
+	color: #78909c;
+	letter-spacing: 0.5px;
+	z-index: 2;
+
+	&-small-title {
+		font: 1.458em/1.7 "MuseoSansRegular";
+	}
+
+	&-title {
+		font: 2.5em/1.7 "MuseoSansBold";
+		color: $second-color;
+		margin-bottom: 30px;
+	}
+
+	&-title-reason {
+		font: 1.875em/1.7 "MuseoSansBold";
+		color: #546e7a;
+		padding-left: 33px;
+	}
+
+	&-title-reason-text {
+		font: 1.458em/1.7 "MuseoSansRegular";
+		margin-bottom: 35px;
+		letter-spacing: 0.35px;
+	}
+}
+
+.flex-wrap--why-us {
+	justify-content: flex-start;
+}
+
+.first-reason,
+.second-reason,
+.third-reason {
+	position: relative;
+	margin-bottom: 3px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 27px;
+		top: 0;
+		left: 0;
+		background: url(../img/icon-sprite.webp) -167px -3px no-repeat;
+	}
+}
+
+.second-reason {
+	&::after {
+		background: url(../img/icon-sprite.webp) -197px -3px no-repeat;
+	}
+}
+
+.third-reason {
+	&::after {
+		background: url(../img/icon-sprite.webp) -197px -3px no-repeat;
+	}
+}
+
+.feedback {
+	position: relative;
+	min-height: 475px;
+	padding-top: 165px;
+	background: url(../img/comment_bg.webp) 47% 66% no-repeat;
+	background-size: 115%;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(38, 50, 56, .8);
+	}
+}
+
+.feedback__slider {
+	position: relative;
+	max-width: 370px;
+	min-height: 310px;
+	margin: 0 auto;
+	padding-top: 45px;
+	padding-left: 40px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	background-color: white;
+	box-shadow: inset -3px -1px 8px 0 rgba(7, 7, 7, 0.2);
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: -9%;
+		left: -7%;
+		width: 64px;
+		height: 64px;
+		border-radius: 50%;
+		background: #fff url(../img/icon-quotes.webp) 48% 45% no-repeat;
+		box-shadow: 1px 1px 2px 1px rgba(38, 50, 56, .2);
+	}
+}
+
+.feedback-text {
+	font: 1.458em/1.6 "MuseoSansRegular";
+	letter-spacing: 0.3px;
+	color: #78909c;
+	margin-bottom: 13px;
+}
+
+.feedback-author {
+	display: block;
+	font: 1.875em/1.7 "MuseoSansRegular";
+	letter-spacing: 0.5px;
+	font-weight: 700;
+	color: $second-color;
+	margin-bottom: -4px;
+
+	&-position {
+		display: block;
+		font: 1.458em/1.7 "MuseoSansMedium";
+		color: $accent-color;
+		letter-spacing: 0.5px;
+	}
+}
+
+
+
+//  Media Queries
+
+
+@media (min-width: 1400px) {
+	.how-work {
+		justify-content: center;
+	}
+
+	.how-work-inner-wrap {
+		// width: auto;
+	}
+
+	.video-wrap {
+		width: auto;
+	}
+}
+
+@media (max-width: 1200px) {
+	.how-work__find-out-link {
+		padding-left: 17%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.how-work__find-out-link {
+		padding-left: 3%;
+	}
+
+	.container-full--why-us {
+		// background: url(../img/why-us.png) 505% 55% no-repeat;
+	}
+}
+
+@media (max-width: 980px) {
+	.how-work__description {
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+
+	.how-work__find-out-link {
+		padding-left: 5%;
+	}
+
+	.container-full--why-us {
+		// background: url(../img/why-us.png) 870% 55% no-repeat;
+	}
+}
+
+@media (max-width: 768px) {
+	.about {
+		padding-left: 37.12%;
+	}
+
+	.skills-list__item:first-child {
+		margin-left: 17px;
+	}
+
+	.skills-list__item:nth-child(9) {
+		margin-left: 17px;
+	}
+
+	.how-work {
+		display: flex;
+		flex-direction: column;
+
+		&__find-out-link {
+			width: 45%;
+			align-self: flex-end;
+			justify-content: center;
+		}
+	}
+
+	.how-work-inner-wrap {
+		width: 100%;
+	}
+
+	.how-work__description {
+		align-self: flex-start;
+		max-width: 100%;
+
+		&-title {
+			margin-top: 40px;
+		}
+	}
+
+	.video-wrap {
+		width: 100%;
+
+		&::after {
+			top: -2%;
+			left: 47%;
+		}
+	}
+
+	.how-work-video {
+		width: 100%;
+	}
+
+	.how-work__find-out-link {
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.flex-wrap--featured-profiles {
+		flex-direction: column;
+	}
+
+	.featured-profiles {
+		margin-right: 0px;
+	}
+
+	.top-teams {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		flex-direction: row;
+		text-align: center;
+
+		&__small-title,
+		&__title {
+			flex-basis: 100%;
+		}
+	}
+
+	.why-us {
+		width: 100%;
+		padding-top: 50px;
+	}
+
+	.back-block {
+		display: none;
+	}
+}
+
+@media (max-width: 720px) {
+	.about {
+		padding-left: 40.12%;
+	}
+}
+
+@media (max-width: 600px) {
+	.about {
+		padding-left: 0;
+		background: none;
+	}
+
+	.how-work__description-title {
+		margin-top: 40px;
+	}
+
+	.how-work__description-text {
+		margin-bottom: 25px;
+	}
+
+	.how-work__find-out-link {
+		font: 1.5em/1.3 "MuseoSansRegular";
+	}
+}
+
+@media (max-width: 480px) {
+	.top-teams {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 400px) {
+	.about {
+		margin-bottom: 30px;
+	}
+
+	.cell-name {
+		width: 100%;
+		text-align: center;
+	}
+
+	.cell-link {
+		width: 100%;
+		text-align: center;
+	}
+
+	.feedback__slider {
+		width: 86%;
+	}
+}
+
+@media (max-width: 320px) {
+	.price-per-hour {
+		margin-bottom: 20px;
+	}
+
+	.about-switch-button {
+		margin-left: 40px;
+	}
+
+	.profile-row__cell {
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+
+	.flex-wrap--featured-profiles {
+		margin-bottom: 0px;
+	}
+
+	.feedback__slider {
+		min-height: 375px;
+	}
+}

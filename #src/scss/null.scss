@@ -1,0 +1,121 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active,
+a:focus,
+a:active {
+	outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	min-width: $minWidth;
+}
+
+body {
+	line-height: 1;
+	font-family: $fontFamily;
+	//text-rendering: optimizeLegibility;
+	color: #000;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: $fontFamily;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+.page-wrap {
+	overflow: hidden;
+}
+
+.accent-color {
+	color: $accent-color;
+}
+
+.second-color {
+	color: $second-color;
+}
+
+.third-color {
+	color: $third-color;
+}
+
+.btn {
+	padding: 13px 21px;
+	color: #fff;
+	border-radius: 3px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+//-webkit-overflow-scrolling: touch;
+//animation-play-state: paused !important;
